@@ -38,9 +38,8 @@
                             developers who make use of the source code and techniques shown.</p>
                         <p class="pb-2">Information on the requirements for this sample code are shown in the ReadMe based
                             documents.</p>
-                        <p class="pb-2">repository : <a href="https://github
-                        .com/AdyGCode/xxx-saas-laravel-mongodb-demo">
-                                https://github.com/AdyGCode/xxx-saas-laravel-mongodb-demo
+                        <p class="pb-2">repository : <a href="https://github.com/aarondalao/AaronDalao-AT2-PT3">
+                                https://github.com/aarondalao/AaronDalao-AT2-PT3
                             </a>.</p>
                     </section>
 
@@ -80,7 +79,7 @@
                                 </p>
                                 <p class="p-2 col-span-4">
                                     <code class="text-emerald-700">
-                                        https://nmt-saas-at2-pt2.herokuapp.com
+                                        https://guarded-river-10865.herokuapp.com/
                                     </code>
                                 </p>
                                 <p class="col-span-4 p-2  text-sm ">This copy is hosted on
