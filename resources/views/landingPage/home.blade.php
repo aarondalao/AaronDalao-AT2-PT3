@@ -8,7 +8,7 @@
         </h2>
     </x-slot>
 
-    
+
     <div class="flex justify-center items-center h-screen bg-CafeAuLait-50 ">
         <div class="max-w-7xl my-auto mx-auto sm:px-6 lg:px-8">
             <div class="overflow-hidden shadow-md shadow-gray-400 sm:rounded-lg">
@@ -33,7 +33,7 @@
                     </div>
 
                     <div class="bg-amber-100 mx-2 rounded w-96 mx-auto rounded-2xl shadow-lg border-emerald-800 border border-1
-                    overflow-hidden">
+                    overflow-hidden mr-4">
                         <div class="h-48 p-3 overflow-hidden text-stone-500 font-black text-10xl text-center">
                             {{ $collectors }}
                         </div>
