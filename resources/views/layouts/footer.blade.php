@@ -70,12 +70,12 @@
 
             <div class="mt-2">
                 <form action="">
-                    <label for=""><strong> Sign up for emailist</strong></label>
-                    <input type="email">
+                    <label for="emailList"><strong> Sign up for email list</strong></label>
+                    <input type="email" id="emailList" maxlength="64">
                     <button
                         class="p-2 rounded-md bg-PewterBlue-500 transition ease-in-out delay-100 hover:bg-blue-100
                         hover:text-stone-600 duration-200 hover:shadow-inner"
-                        type="submit">Sign me up
+                        type="submit" >Sign me up
                     </button>
                 </form>
             </div>

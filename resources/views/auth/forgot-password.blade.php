@@ -1,8 +1,13 @@
 <x-guest-layout>
     <x-auth-card>
         <x-slot name="logo">
-            <a href="/">
-                <x-application-logo class="w-20 h-20 fill-current text-gray-500" />
+            <a class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium leading-5
+                text-black hover:text-gray-50 focus:outline-none focus:text-gray-50
+                focus:border-gray-300 transition duration-150 ease-in-out" href="{{ route('dashboard') }}">
+                <div class="">
+                    <x-application-logo class="flex-1 h-10 w-auto fill-current text-gray-600"/>
+                </div>
+                <h1 class=" ml-2 my-2 text-xl"> {{ __('CarBro') }} </h1>
             </a>
         </x-slot>
 

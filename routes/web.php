@@ -16,28 +16,25 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [LandingPageController::class,'home'])->name('home');
-Route::get('/TermsOfUse', fn() => view('landingPage.terms-of-use'))->name('termsOfUse');
 
+Route::get('/', [LandingPageController::class, 'home'])->name('home');
+Route::get('/TermsOfUse', [LandingPageController::class, 'termsOfUse'])->name('termsOfUse');
+Route::get('/About',[LandingPageController::class, 'about'])->name('about');
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
-
-Route::group(['middleware' => ['auth']], function(){
+Route::group(['middleware' => ['auth']], function () {
     // collectors resources
-    Route::resource('collectors',CollectorController::class);
-    Route::get('/collectors/{collector}/delete', [CollectorController::class,'delete'])
+    Route::resource('collectors', CollectorController::class);
+    Route::get('/collectors/{collector}/delete', [CollectorController::class, 'delete'])
         ->name('collectors.delete');
 
     //cars resources
     Route::resource('cars', CarController::class);
-    Route::get('/cars/{car}/delete', [CarController::class,'delete'])
+    Route::get('/cars/{car}/delete', [CarController::class, 'delete'])
         ->name('cars.delete');
 
     // crude way to use reuse landingPageController whether if the user is authenticated or not.
     // research about accessing the same view/controller with or without authentication
-//    Route::get('/dashboard',[landingPageController::class,'getAllForDashboard'])->name('dashboard');
+    Route::get('/dashboard', [landingPageController::class, 'home'])->name('dashboard');
 });
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';
