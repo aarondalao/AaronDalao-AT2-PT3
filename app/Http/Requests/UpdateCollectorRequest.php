@@ -13,7 +13,7 @@ class UpdateCollectorRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +24,24 @@ class UpdateCollectorRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            "given name" => ['min:2'],
+            "family_name" => ['required', 'min:2'],
         ];
     }
+    /*
+     *
+     *  set all custom messages for this request
+     *  @return array<string, mixed>
+     *
+     * */
+
+    public function messages()
+    {
+        return [
+            'given_name.min' => 'given name minimum length is not met!' ,
+            'family_name.required' => 'family name is required!' ,
+            'family_name.min' => 'family name minimum length is not met!',
+        ];
+    }
+
 }
