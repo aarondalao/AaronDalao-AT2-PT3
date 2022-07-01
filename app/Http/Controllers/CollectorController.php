@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreCollectorRequest;
 use App\Http\Requests\UpdateCollectorRequest;
 use App\Models\Collector;
-
 use App\Models\Car;
 use Illuminate\Http\Request;
 
