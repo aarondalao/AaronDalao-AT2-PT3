@@ -17,19 +17,22 @@
                 </div>
 
                 <!-- Navigation Links -->
+                @if(!Auth::check())
+                    <div class=" text space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                        <x-nav-link :href="route('home')" :active="request()->routeIs('home')">
+                            {{ __('Home') }}
+                        </x-nav-link>
+                    </div>
 
-                <div class=" text space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-nav-link :href="route('home')" :active="request()->routeIs('home')">
-                        {{ __('Home') }}
-                    </x-nav-link>
-                </div>
+                @else
 
+                    <div class=" text space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                        <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
+                            {{ __('Dashboard') }}
+                        </x-nav-link>
+                    </div>
 
-                <div class=" text space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
-                        {{ __('Dashboard') }}
-                    </x-nav-link>
-                </div>
+                @endif
 
                 <div class=" space-x-8 sm:-my-px sm:ml-10 sm:flex">
                     <x-nav-link :href="route('collectors.index')" :active="request()->routeIs('Collectors')">

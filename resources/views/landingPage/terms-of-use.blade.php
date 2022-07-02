@@ -27,7 +27,7 @@
                     <li>
                         <p class="leading-normal mb-1"><strong>Company</strong> (referred to as either &quot;the
                             Company&quot;, &quot;We&quot;, &quot;Us&quot; or &quot;Our&quot; in this Disclaimer)
-                            refers to AJD-At2-Pt3.</p>
+                            refers to AaronDalao-AT2-PT3.</p>
                     </li>
                     <li>
                         <p class="leading-normal mb-1"><strong>Service</strong> refers to the Application.</p>
@@ -39,7 +39,7 @@
                     </li>
                     <li>
                         <p class="leading-normal mb-1"><strong>Application</strong> means the software program
-                            provided by the Company downloaded by You on any electronic device named AJD-At2-Pt3.
+                            provided by the Company downloaded by You on any electronic device named AaronDalao-AT2-PT3.
                         </p>
                     </li>
                 </ul>
